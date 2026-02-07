@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ростелеком | Проектный офис</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="hero-wrapper">
+        <div class="container">
+            <header class="header animate__animated animate__fadeInDown">
+                <img src="https://i.ibb.co/Xf4mMdSv/image.png" alt="РТ" class="logo">
+                <div class="header-line"></div>
+                <div class="header-titles">
+                    <span class="brand">Ростелеком</span>
+                    <span class="office">ПРОЕКТНЫЙ ОФИС</span>
+                </div>
+            </header>
+
+            <section class="hero-main animate__animated animate__fadeInLeft">
+                <h1>Отраслевые решения</h1>
+                <p>Цифровое развитие промышленности и бизнеса на базе отечественных технологий</p>
+            </section>
+
+            <nav class="main-nav">
+                <div class="nav-card" onclick="openSlide('robotics')">
+                    <span class="step">01</span>
+                    <h3>Роботизация</h3>
+                </div>
+                <div class="nav-card" onclick="openSlide('quality')">
+                    <span class="step">02</span>
+                    <h3>Контроль качества</h3>
+                </div>
+                <div class="nav-card" onclick="openSlide('security')">
+                    <span class="step">03</span>
+                    <h3>Средства охраны</h3>
+                </div>
+                <div class="nav-card" onclick="openSlide('eco')">
+                    <span class="step">04</span>
+                    <h3>Экомониторинг</h3>
+                </div>
+                <div class="nav-card" onclick="openSlide('equipment')">
+                    <span class="step">05</span>
+                    <h3>Тех. оборудование</h3>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-wrap">
+            <button class="close-btn" onclick="closeSlide()">✕ ЗАКРЫТЬ</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
