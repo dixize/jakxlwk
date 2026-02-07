@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ростелеком | Проектный офис</title>
+    <title>Ростелеком | Проектный офис Индустрия 4.0</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
     <main class="hero-wrapper">
         <div class="container">
             <header class="header animate__animated animate__fadeInDown">
-                <img src="https://i.ibb.co/Xf4mMdSv/image.png" alt="РТ" class="logo">
+                <img src="https://i.ibb.co/Xf4mMdSv/image.png" alt="Ростелеком" class="logo">
                 <div class="header-line"></div>
                 <div class="header-titles">
                     <span class="brand">Ростелеком</span>
@@ -21,41 +21,87 @@
             </header>
 
             <section class="hero-main animate__animated animate__fadeInLeft">
-                <h1>Отраслевые решения</h1>
-                <p>Цифровое развитие промышленности и бизнеса на базе отечественных технологий</p>
+                <span class="badge">Индустрия 4.0</span>
+                <h1>Цифровая территория будущего</h1>
+                <p>Комплексная цифровая трансформация промышленных активов: от создания частных сетей связи до внедрения искусственного интеллекта в производственные циклы.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary" onclick="window.scrollTo(0, 1000)">Изучить решения</button>
+                </div>
             </section>
 
             <nav class="main-nav">
                 <div class="nav-card" onclick="openSlide('robotics')">
                     <span class="step">01</span>
                     <h3>Роботизация</h3>
+                    <p>Сварочные и логистические комплексы</p>
                 </div>
                 <div class="nav-card" onclick="openSlide('quality')">
                     <span class="step">02</span>
                     <h3>Контроль качества</h3>
+                    <p>Машинное зрение и нейросети</p>
                 </div>
                 <div class="nav-card" onclick="openSlide('security')">
                     <span class="step">03</span>
                     <h3>Средства охраны</h3>
+                    <p>ИТСО и защита периметра</p>
                 </div>
                 <div class="nav-card" onclick="openSlide('eco')">
                     <span class="step">04</span>
                     <h3>Экомониторинг</h3>
+                    <p>Экологический контроль и АСКВ</p>
                 </div>
                 <div class="nav-card" onclick="openSlide('equipment')">
                     <span class="step">05</span>
-                    <h3>Тех. оборудование</h3>
+                    <h3>Оборудование</h3>
+                    <p>Модернизация и импортозамещение</p>
                 </div>
             </nav>
         </div>
     </main>
 
+    <section class="territory-section">
+        <div class="container">
+            <div class="section-grid">
+                <div class="text-block">
+                    <h2 class="section-title">Масштаб присутствия и экспертиза</h2>
+                    <p class="large-p">Проектный офис «Ростелекома» — это не просто поставка оборудования, это создание единого цифрового пространства («Цифровая территория»), где все системы интегрированы между собой.</p>
+                    
+                    <div class="info-rows">
+                        <div class="row-item">
+                            <h4>Региональный охват</h4>
+                            <p>Реализация проектов в 89 субъектах РФ. Собственная сеть сервисных центров и оперативный выезд инженеров в течение 4 часов в любой точке присутствия.</p>
+                        </div>
+                        <div class="row-item">
+                            <h4>Собственные разработки</h4>
+                            <p>Внедрение ПО из реестра отечественного софта, что гарантирует независимость от западных лицензий и поддержку в рамках ФЗ-187.</p>
+                        </div>
+                        <div class="row-item">
+                            <h4>Центр компетенций</h4>
+                            <p>Более 500 сертифицированных архитекторов и инженеров, специализирующихся на тяжелой промышленности, добыче и энергетике.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-block">
+                    <div class="stat-card"><span>>1000</span><p>Крупных проектов ежегодно</p></div>
+                    <div class="stat-card"><span>24/7</span><p>Техническая поддержка</p></div>
+                    <div class="stat-card"><span>100%</span><p>Соответствие нормам КИИ</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div id="modal" class="modal hidden">
         <div class="modal-wrap">
-            <button class="close-btn" onclick="closeSlide()">✕ ЗАКРЫТЬ</button>
+            <button class="close-btn" onclick="closeSlide()">✕ ВЕРНУТЬСЯ</button>
             <div id="modal-content"></div>
         </div>
     </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 ПАО «Ростелеком». Проектный офис промышленной автоматизации.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
